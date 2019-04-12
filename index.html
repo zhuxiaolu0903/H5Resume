@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端应用-交互简历</title>
+    <!--IMPORT CSS-->
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<main class="mainBox">
+    <!-- LOADING -->
+    <section class="loadingBox">
+        <div class="title">
+            <h1>朱小露</h1>
+            <h2>H5场景交互型简历</h2>
+        </div>
+        <div class="progress">
+            <div class="progressing"></div>
+        </div>
+    </section>
+
+    <!-- PHONE -->
+    <section class="phoneBox">
+        <h2>
+            <img src="img/phone_head.png" alt="">
+            <span>00:00</span>
+        </h2>
+        <div class="answer">
+            <div class="markMove"></div>
+            <!--<a href="javascript:;" class="markLink"></a>-->
+            <div class="markLink"></div>
+        </div>
+        <div class="hang">
+            <a href="javascript:;" class="markLink"></a>
+        </div>
+        <div class="music">
+            <audio src="audio/iphone.mp3" loop preload="none" id="iphoneBell"></audio>
+            <audio src="audio/chu.mp3" preload="none" id="hangBell"></audio>
+        </div>
+    </section>
+
+    <!-- MESSAGE -->
+    <section class="messageBox">
+        <ul class="messageList clearfix">
+            <li class="my">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    面试官你好！我叫朱小露，来自于重庆市云阳县，本科毕业于南华大学，大学自学了HML+CSS+JS，以及各种常用的前端框架技术。。。
+                </div>
+            </li>
+            <li class="other">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    哇塞！好牛X啊！介绍一下自己的专业技能吧！
+                </div>
+            </li>
+            <li class="my">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    本人擅长：原生JS、ES6、Promise等设计模式、组件和插件封装，看过JQ源码，可以开发各种Hybrid混合APP...
+                </div>
+            </li>
+            <li class="other">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    框架会吗？我们公司现在使用的是VUE和REACT
+                </div>
+            </li>
+            <li class="my">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    之前的公司使用的是REACT开发，个人对于REACT渲染原理、MVC模式、SPA单页面应用、DIFF差异渲染机制以及REDUX原理等都有研究，掌握的很熟练，对于VUE之前也做过，如果公司需要可以快速入手
+                </div>
+            </li>
+            <li class="other">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    webpack会吗？
+                </div>
+            </li>
+            <li class="my">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    之前项目都是基于脚手架完成的，自己偶尔去修改一些webpack配置项
+                </div>
+            </li>
+            <li class="my">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    同时对于NODE/EXPRESS等后台开发也有所涉猎，只是没有应用到项目实战中，目前也正在研究，对这个比较感兴趣
+                </div>
+            </li>
+            <li class="other">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    你认为你的优点在于哪？和其他人对比，公司为啥要录用你！
+                </div>
+            </li>
+            <li class="my">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    肯吃苦、肯加班、能力高、要钱少...这些够吗?
+                </div>
+            </li>
+            <li class="other">
+                <i class="avatar"></i>
+                <i class="pic"></i>
+                <div class="dialog">
+                    就是你啦，明天来上班！
+                </div>
+            </li>
+        </ul>
+        <div class="keyboard">
+            <span></span>
+            <a href="javascript:;" class="sendLink"></a>
+        </div>
+        <audio src="audio/piano.mp3" loop preload="none" id="message_music"></audio>
+    </section>
+
+    <!-- CUBE -->
+    <section class="cubeBox">
+        <ul class="cubeList">
+            <li><img src="img/zf_cube1.png" alt=""></li>
+            <li><img src="img/zf_cube2.png" alt=""></li>
+            <li><img src="img/zf_cube3.png" alt=""></li>
+            <li><img src="img/zf_cube4.png" alt=""></li>
+            <li><img src="img/zf_cube5.png" alt=""></li>
+            <li><img src="img/zf_cube6.png" alt=""></li>
+        </ul>
+        <div class="tip">魔方可旋转，可点击</div>
+        <audio src="audio/love.mp3" loop preload="none" id="cube_music"></audio>
+    </section>
+
+    <!-- DETAIL -->
+    <section class="detailBox">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide page1">
+                    <dl>
+                        <dt><h2>掌握技能</h2></dt>
+                        <dd><i></i><a href="javascript:;">HTML(5)+CSS(3)+移动端响应式布局开发及相关插件的使用</a></dd>
+                        <dd><i></i><a href="javascript:;">JS中的闭包及堆栈内存以及THIS的处理</a></dd>
+                        <dd><i></i><a href="javascript:;">JS中的面向对象编程，可以基于面向对象封装组件和插件等</a></dd>
+                        <dd><i></i><a href="javascript:;">ES6中的新特性及数组对象里面的常用方法</a></dd>
+                        <dd><i></i><a href="javascript:;">JS中的同步异步编程及Promise设计模式</a></dd>
+                        <dd><i></i><a href="javascript:;">JS中的事件委托及事件池及发布订阅设计模式</a></dd>
+                        <dd><i></i><a href="javascript:;">JS中的DOM操作以及重绘和回流的优化</a></dd>
+                        <dd><i></i><a href="javascript:;">HTTP交互及AJAX库的封装以及跨域数据共享</a></dd>
+                        <dd><i></i><a href="javascript:;">VUE:VUE-CLI/VUE-ROUTER/VUEX/VUE ELEMENT等全家</a></dd>
+                        <dd><i></i><a href="javascript:;">REACT:REACT-ROUTER/REACT-REDUX/DVA/AXIOS/ANT等</a></dd>
+                        <dd><i></i><a href="javascript:;">辅助技能：NODE/WEBPACK/GIT等</a></dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide page2">
+                    <h2>学习体系</h2>
+                    <img src="img/zf_course1.png" alt="">
+                    <img src="img/zf_course2.png" alt="">
+                    <img src="img/zf_course3.png" alt="">
+                    <img src="img/zf_course4.png" alt="">
+                    <img src="img/zf_course5.png" alt="">
+                    <img src="img/zf_course6.png" alt="">
+                    <img src="img/zf_course.png" alt="">
+                </div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+            </div>
+        </div>
+    </section>
+</main>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/makisu.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

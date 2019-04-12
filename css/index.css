@@ -1,0 +1,800 @@
+/**
+ * Reset 0.1.1
+ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 12px;
+  font-style: normal;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+}
+small {
+  font-size: 12px;
+}
+h1 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 14px;
+}
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover,
+a:active {
+  outline-width: 0;
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  border: 0;
+  height: 1px;
+}
+img {
+  border-style: none;
+}
+img:not([src]) {
+  display: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+html {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+textarea,
+button,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+audio:not([controls]),
+video:not([controls]) {
+  display: none;
+  height: 0;
+}
+progress {
+  vertical-align: baseline;
+}
+mark {
+  background-color: #ff0;
+  color: #000000;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+textarea {
+  overflow: auto;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+.clearfix:after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+}
+* {
+  touch-action: pan-y;
+}
+html {
+  font-size: 100px;
+}
+html,
+body {
+  position: relative;
+  z-index: -4;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Microsoft JhengHei";
+}
+.mainBox {
+  position: relative;
+  z-index: -3;
+  margin: 0 auto;
+  width: 6.4rem;
+  height: 100%;
+}
+.loadingBox,
+.phoneBox,
+.messageBox,
+.cubeBox,
+.detailBox {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*LOADING*/
+.loadingBox {
+  background-image: url("../img/load_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -0.5rem;
+}
+.loadingBox .title,
+.loadingBox .progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+}
+.loadingBox .title {
+  margin-top: -2.2rem;
+  width: 100%;
+  height: 1.4rem;
+}
+.loadingBox .title h1 {
+  margin-bottom: .2rem;
+  font-size: .5rem;
+  height: .75rem;
+  line-height: .75rem;
+}
+.loadingBox .title h2 {
+  font-size: .26rem;
+  height: .45rem;
+  line-height: .45rem;
+  letter-spacing: .04rem;
+}
+.loadingBox .progress {
+  position: relative;
+  display: inline-block;
+  margin: 0 .9rem;
+  width: 4.6rem;
+  height: 0.3rem;
+  background-color: #d4e2ff;
+  border-radius: 0.06rem;
+}
+.loadingBox .progress .progressing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 0.06rem;
+  background-image: -webkit-linear-gradient(right top, #79acff 0%, #79acff 25%, #007fc3 25%, #007fc3 50%, #79acff 50%, #79acff 75%, #007fc3 75%, #007fc3 100%);
+  background-repeat: repeat;
+  background-size: 0.3rem;
+  animation: loadingMove .5s linear 0s infinite  both;
+  transition: all .2s linear 0s;
+}
+@keyframes loadingMove {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -0.3rem;
+  }
+}
+/*PHONE*/
+.phoneBox {
+  z-index: -2;
+  background: url("../img/zf_phoneBg.jpg") no-repeat;
+  background-size: cover;
+}
+.phoneBox h2 {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.phoneBox h2 img {
+  display: inline-block;
+  width: 2.62rem;
+  height: 2rem;
+}
+.phoneBox h2 span {
+  display: none;
+  line-height: .3rem;
+  font-size: .3rem;
+  color: white;
+  letter-spacing: .05rem;
+}
+.phoneBox .answer {
+  position: absolute;
+  bottom: .3rem;
+  left: 50%;
+  margin-left: -2.6rem;
+  width: 5.2rem;
+  height: 3.6rem;
+  background: url("../img/zf_phoneListen.png") no-repeat;
+  background-size: cover;
+}
+.phoneBox .answer .markMove {
+  position: absolute;
+  right: -0.06rem;
+  bottom: .48rem;
+  box-sizing: border-box;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: .03rem solid #0f0;
+  animation: listenMove 1s linear 0s infinite both;
+  transition: all 1s linear 0s;
+  z-index: -1;
+}
+.phoneBox .answer .markLink {
+  position: absolute;
+  right: -0.06rem;
+  bottom: .48rem;
+  box-sizing: border-box;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: .03rem solid #0f0;
+  animation: listenMove 1s linear 0s infinite both;
+  transition: all 1s linear 0s;
+  z-index: -1;
+  z-index: 1;
+  border-radius: 0;
+  border: none;
+  animation: none;
+  transition: none;
+}
+.phoneBox .hang {
+  position: absolute;
+  bottom: .3rem;
+  left: 50%;
+  margin-left: -2.6rem;
+  width: 5.2rem;
+  height: 6.59rem;
+  background: url("../img/zf_phoneDetail.png") no-repeat;
+  background-size: cover;
+  transform: translateY(6.89rem);
+  transition: all .3s linear 0s;
+}
+.phoneBox .hang .markLink {
+  position: absolute;
+  bottom: .28rem;
+  left: 50%;
+  margin-left: -0.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+@keyframes listenMove {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+/*MESSAGE*/
+.messageBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url('../img/message_bg.png') no-repeat;
+  background-size: cover;
+}
+.messageBox .messageList {
+  margin-top: .2rem;
+  width: 100%;
+  transition: all .3s linear 0s;
+}
+.messageBox .messageList li {
+  position: relative;
+  margin-bottom: .4rem;
+  padding: .25rem;
+  max-width: 3.6rem;
+  line-height: .4rem;
+  font-size: .26rem;
+  border-radius: .1rem;
+  transition: all .3s linear 0s;
+  opacity: 0;
+}
+.messageBox .messageList li.active {
+  animation: showMove .3s linear both;
+}
+.messageBox .messageList li .avatar {
+  position: absolute;
+  top: 0;
+  width: .82rem;
+  height: .82rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0 0.06rem 0.09rem 0;
+}
+.messageBox .messageList li .pic {
+  position: absolute;
+  top: .2rem;
+  width: .1rem;
+  height: .2rem;
+}
+.messageBox .messageList li.other {
+  float: left;
+  margin-left: 1.25rem;
+  border: .02rem solid #cacaca;
+  background: white;
+}
+.messageBox .messageList li.other .avatar {
+  left: -1rem;
+  background: url("../img/teacher.png") no-repeat;
+  background-size: cover;
+}
+.messageBox .messageList li.other .pic {
+  left: -0.1rem;
+  background: url("../img/zf_messageArrow1.png") no-repeat;
+  background-size: cover;
+}
+.messageBox .messageList li.my {
+  float: right;
+  margin-right: 1.25rem;
+  border: .02rem solid #cacaca;
+  background: lightblue;
+}
+.messageBox .messageList li.my .avatar {
+  right: -1rem;
+  background: url("../img/my.png") no-repeat;
+  background-size: cover;
+}
+.messageBox .messageList li.my .pic {
+  right: -0.1rem;
+  background: url("../img/zf_messageArrow2.png") no-repeat;
+  background-size: cover;
+}
+.messageBox .keyboard {
+  position: absolute;
+  bottom: -0.5rem;
+  width: 100%;
+  height: 5.16rem;
+  background: url("../img/zf_messageKeyboard.png") no-repeat;
+  background-size: cover;
+  transform: translateY(3.7rem);
+  transition: all .3s linear 0s;
+}
+.messageBox .keyboard span {
+  position: absolute;
+  left: .9rem;
+  top: .35rem;
+  width: 4rem;
+  height: .4rem;
+  font-size: .25rem;
+}
+.messageBox .keyboard .sendLink {
+  position: absolute;
+  right: .1rem;
+  bottom: .6rem;
+  width: 1.47rem;
+  height: .74rem;
+  background: url("../img/zf_messageChat.png") no-repeat;
+  background-size: 100% 100%;
+}
+@keyframes showMove {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+/*CUBE*/
+.cubeBox {
+  background: url("../img/cube_bg.png");
+  background-size: cover;
+}
+.cubeBox .cubeList {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin: -2.55rem 0 0 -2.55rem;
+  width: 5.1rem;
+  height: 5.1rem;
+}
+.cubeBox .cubeList li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cubeBox .cubeList li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.cubeBox .tip {
+  position: absolute;
+  bottom: .5rem;
+  left: 0;
+  width: 100%;
+  height: .44rem;
+  line-height: .44rem;
+  text-align: center;
+  font-size: .32rem;
+  font-weight: 600;
+}
+/* 1.让魔方呈现3D效果 */
+.cubeBox {
+  perspective: 2000px;
+}
+.cubeBox .cubeList {
+  transform-style: preserve-3d;
+  transform: scale(0.6) rotateX(-35deg) rotateY(35deg);
+  transition: .3s;
+}
+.cubeBox .cubeList li:nth-child(1) {
+  transform: translateZ(2.55rem);
+}
+.cubeBox .cubeList li:nth-child(2) {
+  transform: translateZ(-2.55rem) rotateY(180deg);
+}
+.cubeBox .cubeList li:nth-child(3) {
+  transform: translateX(2.55rem) rotateY(90deg);
+}
+.cubeBox .cubeList li:nth-child(4) {
+  transform: translateX(-2.55rem) rotateY(-90deg);
+}
+.cubeBox .cubeList li:nth-child(5) {
+  transform: translateY(-2.55rem) rotateX(90deg);
+}
+.cubeBox .cubeList li:nth-child(6) {
+  transform: translateY(2.55rem) rotateX(-90deg);
+}
+/*DETAIL*/
+.detailBox {
+  /*
+   * 基于SWIPER实现切换到哪一个页卡，让哪一个页卡中的后代元素有动画效果
+   *   1.除了编写正常的CSS样式(都写在.PAGE-X中)，把需要实现动画的元素所对应的动画写在#PAGE-X中(IE选择器优先级高)
+   *   2.在SWIPER插件的某些回调函数中(例如:onTransitionEnd...)获取当前展示SLIDE的索引，根据索引为其设置对应的ID值，当前展示的SLIDE有ID，其余的没有ID
+   *   3.为了保证切换到这一页面的时候，元素是动画运动出来的（也就是开始啥都看不见），每个元素都是基于动画显示的（在初始样式中.PAGE? 把所有需要运动的元素透明度设置为零  加ID后执行动画效果，在动画的最后一帧位置让透明度为1即可）
+   */
+}
+.detailBox .swiper-container {
+  height: 100%;
+  overflow: hidden;
+}
+.detailBox .swiper-container .swiper-slide {
+  position: relative;
+  /*每一个页面中的元素相对于自己的页面定位*/
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.detailBox .swiper-container .swiper-slide:nth-child(2) {
+  background-color: #f08f89;
+}
+.detailBox .swiper-container .swiper-slide:nth-child(3) {
+  background-color: #efc3e6;
+}
+.detailBox .swiper-container .swiper-slide:nth-child(4) {
+  background-color: #f0e6ef;
+}
+.detailBox .swiper-container .swiper-slide:nth-child(5) {
+  background-color: #b8bedd;
+}
+.detailBox .swiper-container .swiper-slide:nth-child(6) {
+  background-color: #a99aff;
+}
+.detailBox .page1,
+.detailBox .page2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.detailBox .page1 {
+  background: url("../img/page1_bg.png") no-repeat;
+  background-size: cover;
+}
+.detailBox .page1 dl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5.16rem 0 0 -2.7rem;
+  width: 5.4rem;
+  height: 10.32rem;
+}
+.detailBox .page1 dl dt,
+.detailBox .page1 dl dd {
+  position: relative;
+  padding: .1rem;
+  height: .65rem;
+  line-height: .65rem;
+  border-bottom: 0.01rem dashed #f4f4f2;
+  color: white;
+  background-color: rgba(255, 157, 148, 0.6);
+}
+.detailBox .page1 dl h2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.detailBox .page1 dl dd i {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.35rem;
+  width: 1rem;
+  height: .7rem;
+  background: url("../img/number_bg.png") no-repeat;
+  background-size: cover;
+}
+.detailBox .page1 dl dd a {
+  position: relative;
+  display: block;
+  margin-left: .9rem;
+  font-size: .28rem;
+  color: white;
+  /*移除隐藏*/
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.detailBox .page1 dl dd i,
+.detailBox .page1 dl dd a {
+  z-index: 1000;
+}
+.detailBox .page2 {
+  background: url("../img/page2_bg.png") no-repeat;
+  background-size: cover;
+}
+.detailBox .page2 h2 {
+  margin-top: .6rem;
+  width: 100%;
+  height: .9rem;
+  color: #665c50;
+  font-size: .6rem;
+  text-align: center;
+}
+.detailBox .page2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.5rem 0 0 -0.5rem;
+  width: 1rem;
+  height: 1rem;
+  opacity: 0;
+  transition: .5s;
+}
+.detailBox .page2 img:nth-last-of-type(1) {
+  position: absolute;
+  top: -0.85rem 0 0 -0.66rem;
+  width: 1.32rem;
+  height: 1.7rem;
+}
+.detailBox #page2 h2 {
+  animation: bounceInLeft 1s linear 0s both;
+}
+.detailBox #page2 img:nth-last-of-type(1) {
+  animation: shake 1s both;
+}
+.detailBox #page2 img:not( :nth-last-of-type(1)) {
+  opacity: 1;
+  animation: tada 1s .5s infinite both;
+}
+.detailBox #page2 img:nth-of-type(1) {
+  margin-top: -2.9rem;
+}
+.detailBox #page2 img:nth-of-type(2) {
+  margin-top: -1.7rem;
+  margin-left: 1.5rem;
+}
+.detailBox #page2 img:nth-of-type(3) {
+  margin-top: .7rem;
+  margin-left: 1.5rem;
+}
+.detailBox #page2 img:nth-of-type(4) {
+  margin-top: 1.9rem;
+}
+.detailBox #page2 img:nth-of-type(5) {
+  margin-top: .7rem;
+  margin-left: -2.5rem;
+}
+.detailBox #page2 img:nth-of-type(6) {
+  margin-top: -1.7rem;
+  margin-left: -2.5rem;
+}
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
