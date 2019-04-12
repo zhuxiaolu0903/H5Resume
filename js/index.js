@@ -143,15 +143,16 @@ let phoneRender = function(){
         $span.css('display', 'block');
         let duration = 0;
         //当音乐资源加载完毕, 获取总的播放时长
-        hangBell.oncanplay = function(){
-            duration = this.duration;
-        };
+        // hangBell.oncanplay = function(){
+        //     duration = this.duration;
+        // };
         let minute = 0,
             second = 0;
 
         //播放计时定时器
         autoTimer = window.setInterval(() => {
             second ++;
+            duration = this.duration;
             //播放完毕
             if((minute * 60 + second) > duration){
                 window.clearTimeout(autoTimer);
